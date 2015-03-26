@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+File Name: about.html 
+Author: Samantha Voigt
+Date: 4/13/2014
+Purpose: About Us page for the time4cornhole website 
+-->
+
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Time4Cornhole | About Us</title>
+  <link rel="stylesheet" type="text/css" href="styling.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script>document.createElement('main');</script> <!--Creates the main for IE compatability. Trick found here: http://html5doctor.com/the-main-element/ -->
+</head> 
+
+<body>
+
+  <div id="fb-root"></div> <!--For facebook like button-->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!--#include virtual="modularity/header.part" -->
+<!--#include virtual="modularity/navbar.part" -->
+
+  <main id="about">
+     
+     <h1>About Us</h1>
+	 
+    <div class="maintext">
+	
+	<figure id="aboutpage">
+     <img src="images/about/owners.jpg" alt="Ched and Vivian Martindale, the founders of Time4Cornhole" id="owners">
+    <figcaption>Ched and Vivian Martindale,<br>founders of Time4Cornhole.</figcaption>
+    </figure>
+	
+	<p class="introtext">After being around the US for 100 years or more, cornhole is finally coming to California!</p>
+	
+	<p>Time4Cornhole is a family run, Southern California based business. We're a small team of guys who love to work with 
+	wood products, so we're proud to say that our product is 100% handcrafted, and we use local businesses for all our materials. </p>
+	
+	</div>
+
+	
+	<!--#include virtual="modularity/footer.part" -->
+    
+  </main>
+  
+</body>
+
+
+</html>

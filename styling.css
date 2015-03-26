@@ -1,0 +1,485 @@
+/* 
+File name: styling.css
+Authors: Samantha Voigt and Melissa Williams 
+Date: 4/29/2013
+Purpose: To provide styling for the Time4Cornhole website.
+*/
+
+/*------------------ALL PAGES---------------------------------*/
+
+body { 
+  /*sets the basic font for all content, sets the width of all content to 900px and centers it, and sets the background color to a gray */
+  font-family: "Myriad Pro", "Arial", sans-serif; 
+  width: 950px;
+  margin: 10px auto; 
+  background-color: #CCCCCC; 
+} 
+
+#logo { 
+  /*Makes the logo smaller and centers it above the main and not the aside */
+  width: 450px; 
+  margin: 0px 125px 0px 325px;
+} 
+
+main { 
+  /*makes the background color of main (where most content goes) to a slightly lighter gray than the body, spaces it appropriately for the aside (margin-left) and makes 
+  sure that the box contains all content (overflow)*/
+  display: block; 
+  background-color: #e6e6e6; 
+  width: 800px; 
+  margin-left: 150px; 
+  margin-top: 15px;
+  overflow: hidden; 
+} 
+
+#navbar, h1, h2, em, #constructiondimensions, #bagcost, figcaption, .facebook, span.button { 
+  /*Makes the font of certain elements Arial Black*/
+  font-family: "Arial Black", sans-serif;
+} 
+
+em, h1, h2, figcaption, .facebook, #bagcost{ 
+  /*Sets the color of certain "accent" elements to red*/
+  color: #940000; 
+} 
+
+h1, .facebook, footer, figcaption, .introtext, aside { 
+ /*centers certain elements*/
+ text-align: center; 
+ } 
+ 
+ h1 { 
+  /*puts a line on the bottom of all h1s*/
+  border-bottom: 1px black solid; 
+} 
+
+footer { 
+  /*Puts a line on top of the footer*/
+  border-top: 1px black solid; 
+} 
+
+h1, footer { 
+ /*Sets the width  of both elements to 700px to make the border shorter than the width of the entire main and then centers the whole thing in the page (margin)*/
+  width: 700px;
+  margin: 0px auto; 
+} 
+
+p { 
+  /*Indents all Ps 30px*/
+  text-indent: 30px;
+} 
+
+figcaption, .introtext, #constructiondimensions, #bagcost { 
+  /*Overrides the indent for ps specified above for a few cases*/
+  text-indent: 0px; 
+} 
+
+div.maintext { 
+  /*sets margins (50px is used to line up with the lines under h1 and above the footer), justifies the text, and floats it left*/
+  margin: 20px 50px;
+  text-align: justify; 
+  float: left; 
+} 
+
+#maintext a:link { 
+  color: #800000;
+  text-decoration:none;
+} 
+
+/*.....navbar......*/
+
+aside { 
+  /*holds the navbar, floats it to the left side of the main, fixes its position*/
+  float: left; 
+  position: fixed;
+  width: 150px;
+  text-transform: uppercase;
+} 
+
+#navbar li { 
+  /*Makes the background of the navbar buttons red, separates them from one another (margin), gets rid of the bullets, sets the height, and makes it appear
+  that the text is vertically centered (making the line height = height)*/
+  background-color: #940000; 
+  margin: 5px 0px;
+  list-style-type: none;
+  height: 30px;
+  line-height: 30px;
+} 
+
+#navbar li:nth-of-type(5), #navbar li:nth-of-type(8) { 
+  /*Provides proper spacing and size for "game construction" and 
+  "prices & ordering" in the nav bar*/
+  font-size: 72%;
+  line-height: 13px; 
+}
+
+#navbar li:nth-of-type(7) { 
+  /*Provides proper spacing and size for "game rules" in the nav bar*/
+  line-height: 12px;
+  font-size: 85%;
+}
+
+#navbar li:nth-of-type(1):hover, #navbar a:hover { 
+  /*on hover of both the menu li (no link) and all links in the navbar, change the background and text color and make the cursor a pointer to indicate a link*/
+  background-color: black; 
+  color: #e6e6e6;
+  cursor: pointer; 
+}
+
+#navbar a { 
+  /*Makes the entire li act like a link by making the links a block as big as the li*/
+  display: block;
+  height: 30px;
+}
+
+#navbar span { 
+  /*vertical centers the navbar items that can't be artifically vertically centered like above (the line height must be determined as a different value for proper spacing)*/
+  vertical-align: middle;
+} 
+
+.hidden { 
+  /*classed used to hide the items in the drop down, used in javascript menu.js file*/
+  display: none; 
+}  
+
+/*..................*/
+
+figcaption { 
+  /*Styles the figcaption text*/
+  font-size: 15px; 
+} 
+
+em { 
+  /*Sets em as uppercase, with a slightly larger font, and without italics (font-style)*/
+  text-transform: uppercase; 
+  font-size: 110%;
+  font-style: normal; 
+} 
+
+a:link, a:visited {
+  /*links show black with no decoration*/
+  color: black;
+  text-decoration: none;
+}
+
+a:hover { 
+  /*When hovered, links will turn red (not ones on navbar)*/
+  color: #960000;
+} 
+
+footer, main { 
+  clear: both; 
+} 
+
+.introtext { 
+  /*Stylistic choices, bold the "intro" text at the front of a page*/
+  font-weight: bold; 
+} 
+
+div.fb-like { 
+  margin-bottom: 10px;
+} 
+
+
+/*------------------HOME PAGE------------------------------------------*/
+
+#carousel { 
+  /*Set height of the image carousel div*/
+  height: 380px;
+  position: relative;
+} 
+
+#carousel img, #carousel{ 
+  /*Each image in the carousel will be 800 px wide, matching the width of the entire carousel, any overflow is hidden, and both have relative positioning*/
+  width: 800px;
+  overflow: hidden; 
+  position: relative; 
+} 
+
+#carousel ul { 
+  /*removes bullets in the carousel list for the images, puts them next to each other (along with the next rule to the lis) and uses absolute positioning*/
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  position: absolute; 
+} 
+
+#carousel li { 
+  /*Puts the images in the carousel next to each other*/
+  float: left; 
+} 
+
+#carousel_prev, #carousel_next { 
+  /*Absolutely positioned, with no text-decoration, color changes, and increased font size and padding. Positioned 170px from the top, 50% opacity... on the directional 
+  arrows on the image carousel*/
+  position: absolute; 
+  text-decoration: none; 
+  color: black; 
+  background: #CCCCCC; 
+  font-size: 30px;
+  padding: 5px;
+  top: 170px;
+  opacity: 0.5; 
+} 
+
+#carouselcircles { 
+  position: absolute; 
+  bottom: 0px; 
+  left: 350px;
+  text-decoration: none; 
+  font-size: 75px;
+} 
+
+#carouselcircles a{ 
+  color: #CCCCCC;
+  opacity: 0.2; 
+  text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+} 
+
+#carousel_prev { 
+  /*positions the previous button on the left edge of the carousel*/
+  left: 0px;
+} 
+
+#carousel_next { 
+  /*positions the next button on the right edge of the carousel*/
+  right: 0px; 
+} 
+
+#carousel_prev:hover, #carousel_next:hover { 
+  /*On hover of the previous and next buttons, make their opacity 100%, or fully visible.*/
+  opacity: 1;
+} 
+
+#homecontact { 
+  /*Make the top and bottom border, set the width to 300px (slightly less than half the main), center the text, and make the font-size slightly bigger*/
+  border-top: 1px black solid; 
+  border-bottom: 1px black solid; 
+  width: 300px;
+  text-align: center; 
+  float: right; 
+  font-size: 125%;
+  margin: 20px 25px; /*first value used to align the contact info with the top of the paragraphs to the left*/
+} 
+
+#home div.maintext { 
+  /*Makes the width 400px, leaving 100px over for margins/padding with the contact information*/
+  width: 400px;
+  margin: 0px 25px;
+} 
+
+#home div.maintext p:nth-of-type(1) { 
+  /*Selects the front page "view in chrome" message and makes it italic*/
+  font-style: italic; 
+} 
+
+/*-------ABOUT PAGE---------------------------------------*/ 
+
+img#owners { 
+  /*sizes the image of the owners*/
+  width: 400px;
+}
+
+figure#aboutpage { 
+  /*floats the image to the right and sets the margin*/
+  float: right; 
+  margin: 20px;
+} 
+
+/*--------GALLERY PAGE------------------------------------------*/
+
+#thumbnailsPane {
+  width: 185px;
+  height: 700px;
+  overflow: auto;
+  border: 2px black;
+  padding: 10px; 
+  background-color: #CCCCCC;
+}
+
+#thumbnailsPane img { 
+  width: 175px;
+  cursor: pointer; 
+} 
+
+#photoDisplay {
+  border: 1px solid black;
+  background-color: #CCCCCC;
+  padding: 10px;
+}
+
+#buttonBar {
+clear: both;
+text-align: center; 
+margin: 20px;
+}
+
+#buttonBar img { 
+  cursor: pointer; 
+  width: 60px;
+  margin: 5px; 
+} 
+
+#photoPane { 
+  float: right; 
+  margin-left: 20px;
+} 
+
+#photoDisplay { 
+  width: 450px;
+  height: 600px;
+} 
+
+/*------CONSTRUCTION PAGE---------------------------------------*/
+
+#constructiondimensions { 
+  /*centers the construction dimensions information*/
+  text-align: center; 
+} 
+
+figure#constructionpage img, figure#constructionpage { 
+  /*makes both images on the page 250px wide, along with the entire figure*/
+  width: 250px;
+} 
+
+figure#constructionpage { 
+  /*floats the figure to the left and positions it correctly using margins (can't use margin-right: 20px, the 0px values have to override what's inherited from figure)*/
+  float: left;
+  margin: 0px 20px 0px 0px; 
+} 
+
+/*-------BAGS PAGE-----------------------------------------------*/
+
+#colorchoices { 
+  /*Makes a box for the color choices that is 300px wide with a border and centers it and the text inside of it on the page*/
+  border: 2px black solid; 
+  width: 300px;
+  margin: 0 auto; 
+  text-align: center; 
+} 
+
+#colorchoices ul { 
+  /*Makes the 2 column "Color Choices" div work for more browsers, including chrome*/
+  column-count: 2;
+  -webkit-column-count:2;
+  -moz-column-count:3;
+} 
+
+#colorchoices li { 
+  /*Makes color words go closer to the bullet with all three rules*/
+  text-indent: 5px;
+  text-align: left;
+  list-style: inside disc;
+} 
+
+#bagcost { 
+  /*Styles the text that tells the user how much the bags cost with centering, borders, color, and a larger size.*/
+  text-align: center;
+  width: 500px;
+  margin: 15px auto;
+  font-size: 125%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0px;
+} 
+
+img#bagsimage { 
+  /*centers the image on the bags page and makes its width 700px*/
+  margin: 0 auto; 
+  width: 700px;
+} 
+
+/*--------RULES PAGE------------------------------------------*/
+
+#rules img { 
+  width: 350px; 
+  padding: 20px;
+} 
+
+#rules img:nth-of-type(1){ 
+  /*floats the first image on the rules page to the right */
+  float: right;
+} 
+
+#rules img:nth-of-type(2) { 
+  /*floats the second image on the rules page to the left, margin-right is necessary to wrap the list around the image (and not have the bullets touching the image)*/
+  float: left; 
+  margin-right: 20px; 
+} 
+
+/*--------PRICES & ORDERING-----------------------------------*/
+
+#pricinginfo { 
+  width: 400px;
+  margin: 20px; 
+  text-align: center; 
+  text-indent: 0px;
+} 
+
+main#prices div.maintext p:nth-of-type(2) { 
+  font-size: 25px;
+  text-indent: 0px; 
+  text-align: center; 
+} 
+
+main#prices div.maintext { 
+  margin-top: 0px; 
+} 
+
+div#pricingbox {
+   width: 300px;
+   padding: 10px;
+   margin: 20px 20px 0px 50px;
+   border: 2px solid black; 
+   text-align: center;
+   margin-left: 50px;
+}
+
+span.button { 
+  font-size: 35px;
+  padding: 20px; 
+  line-height: 60px;
+} 
+
+button {
+  margin-top: 50px;
+  background-color: #940000;
+}
+
+#pricingbox p { 
+  line-height: 10px;
+  text-align: left; 
+  text-indent: 0px; 
+} 
+
+#pricingbox p:last-of-type {  /*selects the last paragraph in the pricing box (the line that says 'plus shipping and handling' and centers it*/
+  text-align: center; 
+} 
+
+#pricingbox h2 { 
+  line-height: 5px; 
+} 
+
+img#pricesImg {
+   width: 350px;
+   float: right;
+   margin: 20px 50px 20px 20px; 
+}
+
+
+/*--------FEEDBACK--------------------------------------------*/
+
+.fb-comments { 
+  margin-left: 50px; /*centers the comment box*/ 
+  margin-bottom: 10px;
+} 
+
+/*--------FAQ-------------------------------------------------*/
+
+#faqAccordion { 
+  margin: 20px 0px; 
+  width: 700px;
+} 

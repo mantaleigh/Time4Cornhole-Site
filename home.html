@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!--
+File Name: home.html 
+Author: Samantha Voigt
+Date: 4/13/2014
+Purpose: Home page for the time4cornhole website 
+-->
+
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Time4Cornhole | Home</title>
+  <link rel="stylesheet" type="text/css" href="styling.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="scripts/carousel.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script>document.createElement('main');</script> <!--Creates the main for IE compatability. Trick found here: http://html5doctor.com/the-main-element/ -->
+</head> 
+
+<body>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!--#include virtual="modularity/header.part" -->
+<!--#include virtual="modularity/navbar.part" -->
+
+  <main id="home">
+     
+    <div id="carousel">
+	  <ul> 
+	    <li><img src="images/index/carousel1.jpg" alt="Cornhole Photo 1">
+		<li><img src="images/index/carousel2.jpg" alt="Cornhole Photo 2">
+		<li><img src="images/index/carousel3.jpg" alt="Cornhole Photo 3">
+	  </ul>
+	 <a href="#" id="carousel_prev"> &lt; </a>
+	 <a href="#" id="carousel_next"> &gt; </a>
+	 
+	 <div id="carouselcircles">
+	   <a href="#" id="image1Circle"> &bull; </a>
+	   <a href="#" id="image2Circle"> &bull; </a>
+	   <a href="#" id="image3Circle"> &bull; </a>
+     </div>
+	 
+	</div>
+	
+	<div class="maintext">
+	
+	  <p>Website not displaying properly? Try viewing in Google Chrome or Mozilla Firefox. 
+	  
+	  <p>Time4Cornhole is a Southern California based business that prides itself on quality. Our games are beautiful and handmade, but 
+	  best of all: fun! Cornhole, also known as bean bag toss, corn toss, baggo or bags, is a lawn game in which players take turns throwing 
+	  corn hole bags at a raised platform with a hole in the far end. Order one of our cornhole games to take on camping trips, beach trips, 
+	  family reunions, parties, or even for relaxed backyard play with family and friends. 
+	
+	</div>
+	
+	<div id="homecontact">
+	  <em>Contact:</em><br>
+	  Time4Cornhole<br>
+	  Beaumont, Ca 92223<br>
+	  951-330-1084<br>
+	  vivianmartindale@gmail.com
+	  
+	</div>
+	  
+	<div class="facebook">
+	  Like us on Facebook!
+	  <div class="fb-like-box" data-href="https://www.facebook.com/pages/Time4cornhole/469976113018103" data-width="150" data-height="75" 
+	  data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="true"></div>
+	</div>
+	  
+  </main>
+  
+</body>
+
+</html>

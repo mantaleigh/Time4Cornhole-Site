@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+File Name: bags.html 
+Author: Samantha Voigt
+Date: 4/13/2014
+Purpose: Bags page for the time4cornhole website 
+-->
+
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Time4Cornhole | Bags</title>
+  <link rel="stylesheet" type="text/css" href="styling.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script>document.createElement('main');</script> <!--Creates the main for IE compatability. Trick found here: http://html5doctor.com/the-main-element/ -->
+</head> 
+
+<body>
+
+  <div id="fb-root"></div> <!--For facebook like button-->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!--#include virtual="modularity/header.part" -->
+<!--#include virtual="modularity/navbar.part" -->
+
+  <main id="bags">
+     
+     <h1>Bags</h1>
+          
+    <div class="maintext">
+    
+       <p>Time4Cornhole bags are made of study duck cloth, double stitched for extra 
+       durability. Our bags are filled with whole cleaned corn. (If the game is called 
+       Corn Hole, then the bags should be filled with corn!) We have a variety of colors 
+       to choose from.</p>
+       
+       <div id="colorchoices">
+         <em>COLOR CHOICES:</em> 
+         <ul> 
+           <li>Red
+           <li>Black
+           <li>Navy Blue
+           <li>Bright Blue 
+           <li>Light Blue
+           <li>Maroon
+           <li>Golden Yellow
+           <li>Yellow
+           <li>Pink
+           <li>Purple
+           <li>Dark green 
+           <li>Kelly green
+           <li>Grey 
+           <li>Brown 
+      </ul>     
+      </div>
+     
+     <div id="bagcost">
+       <p>Cost per set of 8 bags (2 color choices) is $25 plus $8 shipping fee.</p>
+     </div>
+           
+       <img src="images/bags/bags.jpg" alt="bags" id="bagsimage">
+          
+    </div>
+	
+	<!--#include virtual="modularity/footer.part" -->
+    
+  </main>
+  
+</body>
+
+</html>
+
+

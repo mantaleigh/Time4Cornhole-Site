@@ -1,0 +1,15 @@
+<aside id="navbar">
+   <ul>
+     <li>Menu
+     <li class="hidden hiddenmenu"><a href="home.html">Home</a>
+     <li class="hidden hiddenmenu"><a href="about.html">About</a>
+     <li class="hidden hiddenmenu"><a href="gallery.html">Gallery</a>
+     <li class="hidden hiddenmenu"><a href="construction.html"><span>Game <br>Construction</span></a>
+     <li class="hidden hiddenmenu"><a href="bags.html">Bags</a>
+     <li class="hidden hiddenmenu"><a href="rules.html"><span>Game <br>Rules</span></a>
+     <li class="hidden hiddenmenu"><a href="prices.html"><span>Prices & <br>Ordering</span></a>
+     <li class="hidden hiddenmenu"><a href="feedback.html">Feedback</a>
+     <li class="hidden hiddenmenu"><a href="faq.html">FAQ</a>
+   </ul>
+</aside>
+

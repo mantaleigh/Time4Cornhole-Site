@@ -1,0 +1,99 @@
+<!DOCTYPE html>     
+<!-- 
+FILE NAME: prices-and-ordering.html
+WRITTEN BY: Melissa Williams
+DATE: 12 April 2014
+PURPOSE: Time4Cornhole Prices and Ordering Page
+
+  edited by Samantha Voigt on 5/1/2014 to fix bugs, add SSI, and change tags and ids to use CSS
+-->
+
+<html>
+
+ <head>
+    <title>Time4Cornhole | Prices & Ordering</title>
+	<meta charset="utf-8">
+	<link href="styling.css" type="text/css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>document.createElement('main');</script> <!--Creates the main for IE compatability. Trick found here: http://html5doctor.com/the-main-element/ -->
+    <script src="scripts/menu.js"></script>
+	<script> 
+
+      $(function() {
+          $( "button" ).button()
+                       .click(function( event ) {
+                              event.preventDefault();
+		                      window.location = "temporaryorder.html";
+                         });
+      });
+  
+  //this script is added here for simplicity (it just controls the button--makes it and pulls up a new page when clicked)
+  
+  </script>
+ </head>
+
+ <body>
+ 
+    <div id="fb-root"></div> <!--For facebook like button-->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+ 
+ 
+<!--#include virtual="modularity/header.part" -->
+<!--#include virtual="modularity/navbar.part" -->
+
+  <main id="prices">
+  
+  <h1>Prices & Ordering</h1>
+  
+    <img id="pricesImg" alt="Display of our games" src="images/prices/prices1.jpg">
+  
+    <div id="pricingbox">
+  
+	  <h2>PRICING:</h2>
+	  <p>Tournament Games (2'x4') ............. <em>$250*</em>
+	  <P>Tailgate Games (2'x3') ................... <em>$200*</em>
+	  <p>Travel Games (1'x2') .......................... <em>$80*</em>
+	  <p>Logos (per board) .............................. <em>$25*</em>
+	  <p>*Plus shipping and handling</p>
+    </div>
+	
+    <div id="pricinginfo">
+     
+	<p>Game sets include 2 cornhole game boards and 2 sets of 4 bags</p>
+	
+	<!--<form action="temporaryorder.html">
+	  <input type="submit" value="ORDER NOW">
+	</form>  -->
+	
+	<button><span class="button">ORDER NOW</span></button>
+	
+	</div>
+	
+    <div class="maintext">
+	
+	<p>Want a custom tournament, tailgate, or travel cornhole game? You've come to the right place! We hand craft both custom and standard
+	games, and their quality is guaranteed. You can order a made-to-order game by either clicking on the link above or contacting us directly (you 
+    can find our contact information on the bottom of this page). </p>	
+	
+	<p><em>Order your cornhole game set today!</em></p>
+	
+	</div>
+
+    <!--#include virtual="modularity/footer.part" -->
+	
+  </main>
+
+
+ </body>
+
+
+ </html>

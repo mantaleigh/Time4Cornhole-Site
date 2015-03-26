@@ -1,0 +1,65 @@
+<!DOCTYPE html>     
+<!-- 
+FILE NAME: feedback.html
+WRITTEN BY: Melissa Williams
+DATE: 12 April 2014
+PURPOSE: Time4Cornhole Customer Feedback Page
+
+edited by Samantha Voigt on 5/1/2014 to add the comment box and SSI
+-->
+
+<html>
+
+   <head>
+      <title>Time4Cornhole | Feedback</title>
+	  <meta charset="utf-8">
+	  <link href="styling.css" type="text/css" rel="stylesheet">
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="scripts/menu.js"></script>
+	  <script>document.createElement('main');</script> <!--Creates the main for IE compatability. Trick found here: http://html5doctor.com/the-main-element/ -->
+   </head>
+
+   <body>
+   
+   <div id="fb-root"></div> <!--For facebook like button-->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+   
+       <script>(function(d, s, id) {
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) return;
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1414998515439543&version=v2.0";
+             fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+	   </script> <!--Script used for the Facebook comment box-->
+     
+   <!--#include virtual="modularity/header.part" -->
+   <!--#include virtual="modularity/navbar.part" -->
+   
+   <main id="feedback">
+
+   <h1>Customer Feedback</h1>
+   
+   <div class="maintext">
+	
+	<p>Post your own feedback, questions, and comments, or read those that others have made here! Log in with Facebook or certain email 
+	providers to post. Feel free to post you comment to our <a href="https://www.facebook.com/pages/Time4cornhole/469976113018103">Facebook</a> wall 
+	by checking that box. Please note that this feedback is public, if you're looking for more private communication, contact us directly by phone or email.
+
+	  <div class="fb-comments" data-href="http://cs.wellesley.edu/~mel3sam/beta/feedback.html" data-width="600" data-numposts="15" data-colorscheme="light"></div>
+
+   </div>
+
+  	<!--#include virtual="modularity/footer.part" -->
+    
+   </main>
+   
+   </body>
+
+</html>

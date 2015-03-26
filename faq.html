@@ -1,0 +1,96 @@
+<!DOCTYPE html>     
+<!-- 
+FILE NAME: faq.html
+WRITTEN BY: Melissa Williams
+DATE: 12 April 2014
+PURPOSE: Time4Cornhole FAQ Page
+-->
+
+<html>
+
+   <head>
+      <title>Time4Cornhole | Frequently Asked Questions</title>
+	  <meta charset="utf-8">
+	  <link href="styling.css" type="text/css" rel="stylesheet">
+	  <link rel="stylesheet" href="jquery-ui/css/custom-theme/jquery-ui-1.10.4.custom.min.css" />
+	  <script src="jquery-ui/js/jquery-1.10.2.js" type="text/javascript"></script>
+	  <script src="jquery-ui/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+	  <script src="scripts/accordion.js"></script>
+      <script src="scripts/menu.js"></script>
+	  <script>document.createElement('main');</script> <!--Creates the main for IE compatability. Trick found here: http://html5doctor.com/the-main-element/ -->
+   </head>
+
+   <body>
+   
+   <div id="fb-root"></div> <!--For facebook like button-->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+   
+   <!--#include virtual="modularity/header.part" -->
+   <!--#include virtual="modularity/navbar.part" -->
+
+   <main id="faq">
+
+   <h1>Frequently Asked Questions</h1>
+   
+   <div class="maintext">
+
+    <div id="faqAccordion"> 
+      
+	  <h3><a href="#question1">Where are your games made?</a></h3>
+	    <div>
+		  <p>Time4cornhole games are made in Beaumont, CA.</p>
+		</div>
+		
+	  <h3><a href="#question2">Are your games regulation?</a></h3>
+	    <div>
+		  <p>Yes! Time4cornhole games are made to tournament specifications. 
+			Tournament games are 24" x 48", 6" in hole, 9" from the top, 4" high 
+			at the front of the game, 12" High at the back.</p>  
+		</div>
+      
+      <h3><a href="#question3">Are your bags regulation?</a></h3>
+	    <div>
+		  <p>Yes! All bags are made with Duck cloth, 6" x 6", Triple Stitched, 
+			Filled with whole Corn, each bag is is weighed at 16 oz. Our bags are 
+			filled with corn that's why it called Cornhole!</p>
+		</div>
+      
+	  <h3><a href="#question4">Can your games stay outside?</a></h3>
+	    <div>
+		  <p>We recommend that you put your games away at night 
+			after a fun day of play as our game is a wooden product.</p>
+		</div>
+	  
+      <h3><a href="#question5">Do you ship?</a></h3>
+	    <div>
+		  <p>Yes! We ship anywhere in the U.S.</p>
+		</div>
+      
+	  <h3><a href="#question6">What are the rules to the game?</a></h3>
+	    <div>
+		  <p>Please check out the Rules of the Game page!</p>
+		</div>
+	  
+	  <h3><a href="#question7">Can you custom order games with logos?</a></h3>
+	    <div>
+	      <p>Yes! However, due to the details needed, custom game orders need to be either called or 
+		  emailed in. Find our contact information at the bottom of this page</p>
+		</div>
+
+    </div>
+   
+
+   </div> 
+   
+   	<!--#include virtual="modularity/footer.part" -->
+   	
+   </main>
+   
+   </body>
+</html>

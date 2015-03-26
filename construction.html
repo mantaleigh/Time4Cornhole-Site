@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+File Name: construction.html 
+Author: Samantha Voigt
+Date: 4/13/2014
+Purpose: Game Construction page for the time4cornhole website 
+-->
+
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Time4Cornhole | Construction</title>
+  <link rel="stylesheet" type="text/css" href="styling.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script>document.createElement('main');</script> <!--Creates the main for IE compatability. Trick found here: http://html5doctor.com/the-main-element/ -->
+</head>
+
+ 
+<body>
+
+  <div id="fb-root"></div> <!--For facebook like button-->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!--#include virtual="modularity/header.part" -->
+<!--#include virtual="modularity/navbar.part" -->
+
+  <main id="construction">
+     
+     <h1>Game Construction</h1>
+          
+    <div class="maintext">
+	
+	 <figure id="constructionpage">
+     <img src="images/construction/construction1.jpg" alt="A hand-made game.">
+     <img src="images/construction/construction2.jpg" alt="A game being hand-made.">
+    <figcaption>All our games are handmade.</figcaption>
+    </figure>
+    
+	   <p class="introtext">Handmade in America!</p>
+
+       <p>Here at Time4Cornhole we take pride in each and every 
+       game made. Our games are made of 3/4" quality Birch plywood, inlaid in a pine frame. 
+       All games are pocket screwed and glued for strength and durability. Each game has 
+       a side handle for easy carrying and comfort. Time4Cornhole's signature wood 
+       grain games are hand painted with 3 coats of Varathane varnish for beautiful shine
+       and luster.</p>
+	   
+	          
+    <p id="constructiondimensions">
+       Game Dimensions: <br> 
+       Tournament games 24" x 48" <br>
+       Tailgate games 24" x 36" <br>
+       Travel games 12" x 24" <br>
+    </p>
+       
+    </div>
+   
+	<!--#include virtual="modularity/footer.part" -->
+   
+  </main>
+  
+</body>
+
+</html>
+
+
